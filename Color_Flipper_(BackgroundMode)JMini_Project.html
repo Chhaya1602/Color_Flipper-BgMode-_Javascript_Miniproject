@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Mode</title>
+    <style>
+        .btngroup {
+            border: 2px solid;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Background Mode</h2>
+    <div class="btngroup">
+        <button onclick="bgMode('black')">DARK MODE</button>
+        <button onclick="bgMode('white')">LIGHT MODE</button>
+        <button onclick="bgMode('green')">GREEN MODE</button>
+        <button onclick="bgMode('yellow')">YELLOW MODE</button>
+        <button onclick="bgMode('pink')">PINK MODE</button>
+
+        <!-- <button onclick="darkMode()">DARK MODE</button>
+        <button onclick="lightMode()">LIGHT MODE</button>
+        <button onclick="greenMode()">GREEN MODE</button>
+        <button onclick="blueMode()">BLUE MODE</button>
+        <button onclick="pinkMode()">PINK MODE</button>
+ -->
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, explicabo consequuntur.
+            Dolorum, consequatur
+            at veniam est fugiat autem modi suscipit exercitationem quis eveniet dolorem id minus ab reiciendis aliquam.
+            Deserunt odit dolores veniam aspernatur fugit est, adipisci repudiandae, at maxime voluptatibus nobis,
+            architecto vero in. Temporibus id accusamus incidunt fuga!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolores illum officia sit, ducimus
+            necessitatibus voluptatum laborum saepe! Distinctio ratione voluptate deserunt consectetur alias soluta quis
+            hic nobis mollitia eius minima, ipsa provident fugiat non repellat quia culpa, libero quae autem nam
+            laborum, corrupti natus velit expedita. A, assumenda. Saepe dolore impedit a accusamus quo nulla doloremque
+            velit aperiam unde quod excepturi, mollitia alias hic cumque inventore numquam quasi deleniti suscipit id
+            fugiat debitis? Quia, minima, ex asperiores porro esse adipisci labore quisquam harum eius autem deleniti
+            quam quos aspernatur odit culpa accusantium eligendi alias natus? Sapiente ratione vel rem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores, odio distinctio reprehenderit
+            commodi obcaecati assumenda aliquid laudantium dignissimos non cum sapiente ad iure aut, similique earum ea
+            eos? Saepe necessitatibus nostrum exercitationem sunt? Quisquam libero culpa exercitationem quis quas hic
+            labore quod dignissimos quasi molestias necessitatibus molestiae atque qui iste facere inventore expedita
+            id, possimus voluptate aperiam doloribus eius asperiores. Omnis non cumque fugiat minus ducimus officia sed.
+            Tempore consectetur ipsam asperiores quidem aliquam harum, obcaecati distinctio quod dicta id aliquid rerum
+            dolore maxime quae rem voluptatibus ipsum inventore nostrum. Ratione possimus officia iure. Odio id voluptas
+            optio non ducimus nihil consequatur eligendi quod quas, quia vel aliquid magnam? Praesentium rem labore,
+            distinctio cum temporibus aperiam reiciendis consequuntur culpa magnam doloremque vitae debitis quae
+            reprehenderit id, est sequi, voluptatibus veniam itaque necessitatibus esse. Adipisci eos voluptatum unde
+            sed quibusdam ex commodi esse, numquam, quasi perferendis accusantium neque odit assumenda.</p>
+    </div>
+
+    <script>
+
+        const bgMode = (bgcolor) => {
+            document.body.style.backgroundColor = bgcolor
+            //document.body.style.backgroundColor = 'black'
+             
+            if(bgcolor == "black"){
+            document.body.style.color = 'white'
+            }else if(bgcolor == 'pink'){
+            document.body.style.color = 'black'
+            }else if(bgcolor == 'blue'){
+             document.body.style.color = 'white'
+            }else{
+                document.body.style.color = 'black'
+            }
+        }
+
+
+        /* const darkMode = () =>{
+             document.body.style.backgroundColor = 'black'
+             document.body.style.color = 'white'
+         }
+ 
+ 
+         const lightMode = () =>{
+             document.body.style.backgroundColor = 'white'
+             document.body.style.color = 'black'
+        
+         }
+ 
+ 
+         const blueMode = () =>{
+             document.body.style.backgroundColor = 'blue'
+             document.body.style.color = 'white'
+         }
+ 
+ 
+         const greenMode = () =>{
+             //document.getElementById('demo').style.backgroundColor = 'green'
+             document.body.style.backgroundColor = 'green'
+         }
+ 
+ 
+ 
+ 
+         const pinkMode = () =>{
+             document.body.style.backgroundColor = 'pink'
+               document.body.style.color = 'black'
+         } */
+
+    </script>
+</body>
